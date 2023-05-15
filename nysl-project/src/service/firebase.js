@@ -1,18 +1,19 @@
 import firebase from "firebase/compat/app";
+import { getDatabase } from "firebase/database";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "project-nysl-d0ad6.firebaseapp.com/",
-  databaseURL: "https://project-nysl-d0ad6.firebaseapp.com/",
+  databaseURL: "https://project-nysl-d0ad6-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "project-nysl-d0ad6",
   storageBucket: "project-nysl-d0ad6.appspot.com",
   appId: "project-nysl-d0ad6",
 };
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+const app = firebase.initializeApp(firebaseConfig);
+export const db = getDatabase(app);
 
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt: "select_account" });
