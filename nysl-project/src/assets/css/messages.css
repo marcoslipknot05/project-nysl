@@ -1,12 +1,10 @@
 .messages__header {
     margin: 0;
-    width: 765px;
     text-align: center;
   }
   
   .messages__container {
-    width: 765px;
-    text-align: right;
+    text-align: center;
   }
   
   .messages__button {

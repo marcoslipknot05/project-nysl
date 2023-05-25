@@ -1,6 +1,6 @@
   .logo {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
   }
   
   .content {
@@ -10,7 +10,7 @@
   
   .title {
     border-bottom: 5px solid black;
-    padding-bottom: 1rem;
+    padding-bottom: 0.3rem;
     text-align: center;
     font-size: 1.2rem;
   }

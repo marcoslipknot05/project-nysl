@@ -9,12 +9,12 @@ const Header = () => {
       { name: "About", link: "/about", isActive: false },
       { name: "Contact", link: "/contact", isActive: false },
       {
-        name: "Rules and Policies",
+        name: "Rules",
         link: "/rules-and-policies",
         isActive: false,
       },
       {
-        name: "Game Information",
+        name: "Information",
         link: "/games",
         isActive: false,
       },
